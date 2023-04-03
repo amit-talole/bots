@@ -1,0 +1,23 @@
+welcome-message: false
+
+logging:
+  level: debug
+  path: false
+  rich: false
+  console: true
+  timestamp: true
+  extended: true
+
+connectors:
+  matrix:
+    homeserver: $MATRIX_SERVER_URL
+    mxid: $MATRIX_MXID
+    access_token: $MATRIX_ACCESS_TOKEN
+    rooms:
+      main:
+        alias: $MATRIX_ROOM_MAIN
+
+
+skills:
+  greet:
+    path: __init__.py
